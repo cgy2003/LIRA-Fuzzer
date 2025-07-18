@@ -80,7 +80,7 @@ python3 LLMVerification.py --verification_server_ip 127.0.0.1 \
 Set the path to the extracted candidate APIs in `LLMGlobalData.py`:
 
 ```python
-json_file = "jellyfin/api_extraction_output.json"
+json_file = "Example/api_extraction_output.json"
 ```
 
 Then, run `resend.py` to send test cases to the target API service and coordinate with the verifier to detect vulnerabilities:
