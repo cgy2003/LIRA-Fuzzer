@@ -1,4 +1,4 @@
-# 🧪 LIRA-Fuzzer User Guide
+# LIRA-Fuzzer User Guide
 
 This guide will walk you through using the **LIRA-Fuzzer** toolchain, covering the following steps:
 
@@ -63,7 +63,7 @@ python api_extraction.py \
 
 ---
 
-## 🛡️ Step 4: Launch the Verification Server
+## ⚙️ Step 4: Launch the Verification Server
 
 Start the local vulnerability verification server using `LLMVerification.py`, which listens for validation requests from the test client:
 
