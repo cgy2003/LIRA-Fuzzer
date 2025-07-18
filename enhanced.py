@@ -20,32 +20,29 @@ def enhance_parameter(schema):
 
     # 更专业的系统角色提示(基于论文中的Guidelines)
     role = (
-        "你是一个专门用于增强 OpenAPI 规范的 AI 助手。"
-        "你的任务是通过添加清晰的描述、约束、示例和类型细节来改进 API 参数定义。"
-        "你擅长根据参数描述和上下文推断逻辑示例值。"
-        "如果参数缺少描述，请不要添加描述并保持原样。"
+         "你是一个专门优化 OpenAPI 参数定义的 AI 助手，精通 API 安全、规范建模和接口增强任务。"
+    "你的职责包括推断参数的类型、补全描述信息、添加合理约束（如长度、格式、枚举、正则表达式等），"
+    "并在上下文允许的前提下提供示例值。"
+    "你不会随意修改已有字段，也不会擅自填充模糊信息。"
     )
 
     task = (
-        "请增强以下 OpenAPI schema中所有的参数。\n\n"
-        "指令：\n"
-        "1. 为所有参数指定正确的类型（例如：string、integer、boolean）。\n"
-        "2. 在适用的情况下添加约束（例如：minLength、maxLength、minValue、maxValue、pattern、enum）。\n"
-        "3. 仅当可以从描述或现有数据中逻辑推断时，提供示例值。\n"
-        "   - 确保示例是现实且与参数用途相关的。\n"
-        "   - 如果无法推断出逻辑示例，请完全省略 'example' 字段。\n"
-        "   - 如果某个参数已经有了示例值，不要再改变其示例值了，只有在没有示例值的时候才加示例值。\n"
-        "4. 如果参数是对象或数组，请增强其嵌套属性。\n"
-        "5. 如果参数缺少描述，请不要添加描述并保持原样。\n"
-        "6. 确保输出是有效的 JSON 格式，适合直接用于 OpenAPI 规范。\n"
-        "7. 不要包含任何额外解释，仅返回增强后的 OpenAPI schema（JSON 格式）。\n\n"
-        "有效输出的示例：\n"
-        "- 如果示例有效：\n"
-        "  {\"type\": \"string\", \"description\": \"用户电子邮件地址\", \"format\": \"email\", \"example\": \"user@example.com\"}\n"
-        "- 如果示例不确定：\n"
-        "  {\"type\": \"string\", \"description\": \"用户电子邮件地址\", \"format\": \"email\"}\n"
-        "- 如果没有描述：\n"
-        "  {\"type\": \"string\"}\n\n"
+         "请增强下面提供的 OpenAPI 参数 schema。具体要求如下：\n\n"
+    "【格式验证】\n"
+    "- 输入必须是结构正确的 JSON 格式 schema；若无效请返回错误。\n\n"
+    "【增强规则】\n"
+    "1. 明确补充类型字段（如 string、integer、boolean、array、object）。\n"
+    "2. 对 string 类型参数推断 minLength 与 maxLength。\n"
+    "3. 若参数有明显的格式要求，添加标准 format（如 email、uuid、date-time）。\n"
+    "4. 对具有离散取值的字段添加 enum 值集合。\n"
+    "5. 若能从描述或字段名逻辑推断出 pattern，则添加正则表达式。\n"
+    "6. 提供贴近真实语义的 example 示例值，但仅在没有已有示例时才添加。\n"
+    "7. 不允许凭空填写 description 字段，若无原始描述则保持为空。\n"
+    "8. 若为嵌套对象或数组，应递归增强其子字段。\n\n"
+    "【输出要求】\n"
+    "- 保留原有字段，仅在逻辑清晰处做补充。\n"
+    "- 返回完整增强后的 JSON（不包含解释、注释或额外说明）。\n"
+    "- 输出结果需满足 OpenAPI 3.0.0 规范的 JSON 要求，可直接嵌入参数文档。\n\n"
         f"当前 schema:\n{json.dumps(schema, indent=2)}"
     )
 
@@ -80,7 +77,7 @@ def enhance_parameter(schema):
     except Exception as e:
         print(f"增强schema时出错: {str(e)}")
         return schema  # 失败时返回原始schema
-def enhance_schema(schema):
+def enhance_requestBody(schema):
     """
     增强OpenAPI schema，基于RESTGPT论文方法优化
     新增功能：
@@ -97,32 +94,27 @@ def enhance_schema(schema):
 
     # 更专业的系统角色提示(基于论文中的Guidelines)
     role = (
-        "你是一个专门用于增强 OpenAPI 规范的 AI 助手。"
-        "你的任务是通过添加清晰的描述、约束、示例和类型细节来改进 API 参数定义。"
-        "你擅长根据参数描述和上下文推断逻辑示例值。"
-        "如果参数缺少描述，请不要添加描述并保持原样。"
+        "你是一个专门优化 OpenAPI 规范中 requestBody 部分的 AI 助手。"
+    "你的任务是通过推理缺失字段、添加参数约束、生成示例负载等方式，对 requestBody 中的 schema 结构进行增强。"
+    "当字段含义不明确或结构无法可靠推断时，你应保持原样，避免误填。"
     )
 
     task = (
-        "请增强以下 OpenAPI schema中所有的参数。\n\n"
-        "指令：\n"
-        "1. 为所有参数指定正确的类型（例如：string、integer、boolean）。\n"
-        "2. 在适用的情况下添加约束（例如：minLength、maxLength、minValue、maxValue、pattern、enum）。\n"
-        "3. 仅当可以从描述或现有数据中逻辑推断时，提供示例值。\n"
-        "   - 确保示例是现实且与参数用途相关的。\n"
-        "   - 如果无法推断出逻辑示例，请完全省略 'example' 字段。\n"
-        "   - 如果某个参数已经有了示例值，不要再改变其示例值了，只有在没有示例值的时候才加示例值。\n"
-        "4. 如果参数是对象或数组，请增强其嵌套属性。\n"
-        "5. 如果参数缺少描述，请不要添加描述并保持原样。\n"
-        "6. 确保输出是有效的 JSON 格式，适合直接用于 OpenAPI 规范。\n"
-        "7. 不要包含任何额外解释，仅返回增强后的 OpenAPI schema（JSON 格式）。\n\n"
-        "有效输出的示例：\n"
-        "- 如果示例有效：\n"
-        "  {\"type\": \"string\", \"description\": \"用户电子邮件地址\", \"format\": \"email\", \"example\": \"user@example.com\"}\n"
-        "- 如果示例不确定：\n"
-        "  {\"type\": \"string\", \"description\": \"用户电子邮件地址\", \"format\": \"email\"}\n"
-        "- 如果没有描述：\n"
-        "  {\"type\": \"string\"}\n\n"
+        "请增强以下 OpenAPI requestBody 中的 schema 内容，具体要求如下：\n\n"
+    "【结构检查】\n"
+    "- 检查 requestBody 中是否包含 content 字段；若缺失则返回错误。\n\n"
+    "【处理流程】\n"
+    "1. 遍历所有受支持的媒体类型（如 application/json、multipart/form-data），提取每个 schema。\n"
+    "2. 对每个 schema 执行如下增强操作：\n"
+    "   - 明确补充属性的类型（如 string、integer、boolean、array、object）。\n"
+    "   - 添加合理的属性约束（如 format、maxLength、minimum、maximum、pattern、enum）。\n"
+    "   - 若字段为对象或数组，递归增强其嵌套属性。\n"
+    "   - 为整个 schema 生成一个完整、语义合理的示例对象（example）。\n"
+    "3. 若某字段含义不明确或结构不清，请保持原样，避免增加无根据的字段。\n\n"
+    "【输出格式】\n"
+    "- 返回增强后的 requestBody 对象，包含改进后的 schema 与生成的示例。\n"
+    "- 结果必须是完整的 JSON 格式，便于直接集成到 OpenAPI 规范中。\n"
+    "- 输出中不应包含任何说明性文字，仅输出增强后的 JSON。\n\n"
         f"当前 schema:\n{json.dumps(schema, indent=2)}"
     )
 
@@ -176,18 +168,7 @@ def enhance_openapi_spec(openapi_spec):
     # 深度复制以避免修改原始数据
     enhanced_spec = json.loads(json.dumps(openapi_spec))
     
-    # 增强components中的定义
-    # if 'components' in enhanced_spec:
-    #     if 'schemas' in enhanced_spec['components']:
-    #         for name, schema in enhanced_spec['components']['schemas'].items():
-    #             enhanced_spec['components']['schemas'][name] = enhance_schema(schema)
-                
-    #     if 'requestBodies' in enhanced_spec['components']:
-    #         for name, body in enhanced_spec['components']['requestBodies'].items():
-    #             if 'content' in body:
-    #                 for media_type, content in body['content'].items():
-    #                     if 'schema' in content:
-    #                         content['schema'] = enhance_schema(content['schema'])
+
     
     # 增强paths中的定义
     if 'paths' in enhanced_spec:
@@ -200,7 +181,7 @@ def enhance_openapi_spec(openapi_spec):
                         if 'content' in spec['requestBody']:
                             for media_type, content in spec['requestBody']['content'].items():
                                 if 'schema' in content:
-                                    content['schema'] = enhance_schema(content['schema'])
+                                    content['schema'] = enhance_requestBody(content['schema'])
     
     return enhanced_spec
 

@@ -42,118 +42,7 @@ def convert(request_dict):
             request_dict.get('query', {}), request_dict.get('body', {}))
 
 
-def revise_request_with_gpt(
-    original_response,  # 原始请求的错误响应
-    get_response,      # GET请求的成功响应
-    original_request,  # 原始请求参数 (path,header,query,body)
-    baseurl,
-    headers,
-    api_request_spec,
-    model="gpt-4",
-    max_retry=3
-):
-    """
-    综合原始错误和GET返回数据修正请求
-    
-    Args:
-        original_response: 原始请求的错误响应(requests.Response)
-        get_response: GET请求的成功响应(requests.Response)
-        original_request: 原始请求参数元组 (path,header,query,body)
-        baseurl: 基础URL
-        headers: 认证头信息
-        api_request_spec: API规范
-        model: LLM模型
-        max_retry: 最大重试次数
-        
-    Returns:
-        dict: 修正后的请求结构 {
-            "path": {}, 
-            "header": {}, 
-            "query": {}, 
-            "body": {}
-        }
-    """
-    api_path_dict, api_header_dict, api_query_dict, api_body_dict = original_request
-    
-    # 构造对比分析提示
-    system_prompt = f"""
-你是一名专业的API调试专家。请根据以下信息修正请求：
 
-1. 原始请求失败原因（状态码 {original_response.status_code}）:
-{original_response.text[:500]}
-
-2. GET请求获取的资源数据结构（状态码 {get_response.status_code}）:
-{get_response.text[:1000]}
-
-3. API规范要求:
-{json.dumps(api_request_spec, indent=2)}
-
-修正策略：
-- 对比GET返回的数据结构与原始请求体差异
-- 分析原始错误信息的提示
-- 保持必要认证头（如 {list(headers.keys())}）
-- 确保符合API规范
-
-返回JSON格式的完整修正请求：
-{{
-    "path": {{...}},   // 需要时修改路径参数
-    "header": {{...}}, // 必须包含认证头
-    "query": {{...}},  // 根据资源结构调整
-    "body": {{...}}    // 适配GET返回的数据结构
-}}
-"""
-
-    user_prompt = f"""
-原始请求参数：
-- Path: {json.dumps(api_path_dict)}
-- Headers: {json.dumps({k: '*****' if k.lower() == 'authorization' else v for k,v in api_header_dict.items()})}
-- Query: {json.dumps(api_query_dict)}
-- Body: {json.dumps(api_body_dict)}
-
-请给出修正后的完整请求参数："""
-
-    for _ in range(max_retry):
-        try:
-            # 调用LLM接口
-            
-            ai_response = Aiclient.chat.completions.create(
-                model=OPENAI_MODEL,  
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                temperature=0.2,
-                response_format={"type": "json_object"},
-            )
-            # 解析响应
-            content = ai_response.choices[0].message.content
-            if content.startswith("```json"):
-                content = content[7:-3].strip()
-            
-            revised_request = json.loads(content)
-            
-            # 强制保留关键认证头
-            revised_request['header'].update(
-                {k: v for k,v in headers.items() 
-                 if k.lower() in ['authorization', 'x-api-key']}
-            )
-            
-            return revised_request
-
-        except json.JSONDecodeError:
-            print("LLM返回JSON解析失败，正在重试...")
-            continue
-        except Exception as e:
-            print(f"LLM调用失败: {str(e)}")
-            continue
-    
-    # 失败时返回原始结构
-    return {
-        "path": api_path_dict,
-        "header": api_header_dict,
-        "query": api_query_dict,
-        "body": api_body_dict
-    }
 # def revise_vulrequest_with_llm(response, original_request, candidate_api_test_type, max_retry=3):
 #     import json  # 放到函数内部，确保可独立使用
 #     api_path_dict, api_header_dict, api_query_dict, api_body_dict = original_request
@@ -218,168 +107,58 @@ def revise_vulrequest_with_llm(response, original_request, candidate_api_test_ty
         "display_api": "XSS漏洞"
     }
     system_prompt = """
-你是一名经验丰富的 API 安全测试专家。
+🧑‍💻【角色设定（Role Instructions）】
 
-你收到一个 HTTP 请求响应。你的任务是根据服务器返回的错误信息，分析出错误原因，自动推理出正确的请求体结构，并修改原始的 body_dict 以使请求有效，并保留测试用的 负载。
+- 你是一名经验丰富的 API 漏洞测试专家；
+- 你收到一个 HTTP 请求及其对应的响应，响应状态码为 {status_code}；
+- 你的任务是分析请求失败的原因，并对请求进行修改，使其在语法和语义上都合法；
+- 所有用于 fuzzing 或漏洞探测的安全负载必须保持不变。
 
-你的目标包括：
-1. 修改 body_dict，去除__body__这样的字段，保持 path、header、query 参数不变:
-例如原始请求为：
+📌【任务说明（Task Instructions）】
+
+🔹 原始请求体（Original Request）：
+{request_body}
+
+🔹 错误响应（Error Response）：
+{error_response}
+
+请你执行以下任务：
+
+1. 分析响应内容，识别导致请求失败的字段、格式或类型错误；
+2. 修改请求的 body 字段（必要时也可调整 path 或 query 参数）以满足服务端预期格式；
+3. headers 部分保持原样；
+4. 不得删除、替换或改动任何 fuzzing payload；
+5. 最终仅返回合法且格式正确的 JSON 请求体；
+6. 不需要解释或输出任何多余文字，只输出修正后的 JSON。
+
+示例修正：
+
+输入：
 {{
   "__body__": [
     {{
-      "Name": "LLMTestString0",
+      "Name": "1",
       "Url": "http://127.0.0.1:4444/ssrf/RepositoriesLLMUrl",
       "Enabled": true,
       "repositoryInfos": []
     }}
   ]
 }}
-则应该修改成：
+
+输出：
 {{
-  "Name": "LLMTestString0",
+  "Name": "1",
   "Url": "http://127.0.0.1:4444/ssrf/RepositoriesLLMUrl",
   "Enabled": true,
   "repositoryInfos": []
 }}
-
-2. 分析错误响应中的字段名、类型、格式要求,总结出请求错误原因，不要随意修改恶意负载；
-例如：针对http://127.0.0.1:5000/ph-api/stubs
-{{
-  "id": "reverse-proxy",
-  "conditions": {{
-    "url": {{
-      "path": {{
-        "equals": /
-      }}
-    }}
-  }},
-  "response": {{
-    "reverseProxy": {{
-      "url": "http://127.0.0.1:4444//ph-api/stubs",
-      "appendQueryString": true,
-      "appendPath": true,
-      "replaceRootUrl": true
-    }}
-  }},
-  "priority": 0,
-  "enabled": true
-}}
-则应该改成：
-{{
-  "id": "reverse-proxy",
-  "conditions": {{
-    "url": {{
-      "path": {{
-        "equals": "/"
-      }}
-    }}
-  }},
-  "response": {{
-    "reverseProxy": {{
-      "url": "http://127.0.0.1:4444//ph-api/stubs",
-      "appendQueryString": true,
-      "appendPath": true,
-      "replaceRootUrl": true
-    }}
-  }},
-  "priority": 0,
-  "enabled": true
-}}
-
-请返回结构正确、格式符合要求 的 body_dict。
-
-【原始请求体】：
-{request_body}
-
-【错误响应（截断）】：
-{error_response}
-
-仅输出修改后的 JSON，不需要解释。
 """.format(
+    status_code=response.status_code,
     request_body=json.dumps(api_body_dict, indent=2),
     error_response=response.text[:500]
 )
-#     system_prompt =f"""
-# 你是一名经验丰富的 API 安全测试专家。
 
-# 你收到一个 HTTP 请求响应。你的任务是根据服务器返回的错误信息，分析出错误原因，自动推理出正确的请求体结构，并修改原始的 body_dict 以使请求有效，并保留测试用的 负载。
 
-# 你的目标包括：
-# 1. 修改 body_dict，去除__body__这样的字段，保持 path、header、query 参数不变:
-# 例如原始请求为：
-# {{
-#   "__body__": [
-#     {{
-#       "Name": "LLMTestString0",
-#       "Url": "http://127.0.0.1:4444/ssrf/RepositoriesLLMUrl",
-#       "Enabled": true,
-#       "repositoryInfos": []
-#     }}
-#   ]
-# }}
-# 则应该修改成：
-# {{
-#   "Name": "LLMTestString0",
-#   "Url": "http://127.0.0.1:4444/ssrf/RepositoriesLLMUrl",
-#   "Enabled": true,
-#   "repositoryInfos": []
-# }}
-
-# 2. 分析错误响应中的字段名、类型、格式要求,总结出请求错误原因，不要随意修改恶意负载；
-# 例如：
-# {{
-#   "id": "reverse-proxy",
-#   "conditions": {
-#     "url": {
-#       "path": {
-#         "equals": /
-#       }
-#     }
-#   },
-#   "response": {
-#     "reverseProxy": {
-#       "url": "http://127.0.0.1:4444//ph-api/stubs",
-#       "appendQueryString": true,
-#       "appendPath": true,
-#       "replaceRootUrl": true
-#     }
-#   },
-#   "priority": 0,
-#   "enabled": true
-# }}
-# 则应该改成：
-# {{
-#   "id": "reverse-proxy",
-#   "conditions": {
-#     "url": {
-#       "path": {
-#         "equals": "/"
-#       }
-#     }
-#   },
-#   "response": {
-#     "reverseProxy": {
-#       "url": "http://127.0.0.1:4444//ph-api/stubs",
-#       "appendQueryString": true,
-#       "appendPath": true,
-#       "replaceRootUrl": true
-#     }
-#   },
-#   "priority": 0,
-#   "enabled": true
-# }}
-
-# 请返回结构正确、格式符合要求 的 body_dict。
-
-# 【原始请求体】：
-# {json.dumps(api_body_dict, indent=2)}
-
-# 【错误响应（截断）】：
-# {response.text[:500]}
-
-# 仅输出修改后的 JSON，不需要解释。
-# """
     print(system_prompt)
     for _ in range(max_retry):
         try:
