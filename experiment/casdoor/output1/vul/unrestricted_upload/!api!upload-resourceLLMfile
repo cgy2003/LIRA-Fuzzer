@@ -1,0 +1,56 @@
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.asp
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.aspx
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.jsp
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.php
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.asp
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.aspx
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.jsp
+
+-------- LLM Vul API --------
+API Vul Type: unrestricted_upload
+Vul API Url: /api/upload-resource
+Vul API Method: Post
+API Vul Param: file
+API Test Payload: webshell.php
+

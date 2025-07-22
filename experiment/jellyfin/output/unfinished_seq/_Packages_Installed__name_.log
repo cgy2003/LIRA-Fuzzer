@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Packages/Installed/{name}
+Candidate API Method: Post
+Candidate API Seq: Get /Packages  -->  Get /Packages/{name}  -->  Post /Packages/Installed/{name}
+Failed API: Get /Packages/{name}
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Packages/Bookshelf
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'assemblyGuid': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d14'}
+request_data: {}
+response: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"00-0e24c6125f58de4bb412bef592ba50cd-e37f07f359786e4e-00"}
+status_code: 404
+

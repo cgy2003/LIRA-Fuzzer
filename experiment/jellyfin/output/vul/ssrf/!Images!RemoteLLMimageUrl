@@ -1,0 +1,35 @@
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl
+
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl
+
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl
+
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl
+
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl
+
+API Vul Type: ssrf
+Vul API Url: /Images/Remote
+Vul API Method: Get
+API Vul Param: imageUrl
+API Test Payload: http://127.0.0.1:4444/ssrf/Images/RemoteLLMimageUrl

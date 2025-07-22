@@ -1,0 +1,22 @@
+{
+  "SwaggerSpecFilePath": [
+    "enhanced\\jellyfin-openapi-10.7.13.json"
+  ],
+  "GrammarOutputDirectoryPath": ".\\LLMCompilerBin\\Compile",
+  "IncludeOptionalParameters": true,
+  "UseHeaderExamples": false,
+  "UsePathExamples": false,
+  "UseQueryExamples": true,
+  "UseBodyExamples": true,
+  "UseAllExamplePayloads": true,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "ResolveHeaderDependencies": true,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": true,
+  "TrackFuzzedParameterNames": false
+}

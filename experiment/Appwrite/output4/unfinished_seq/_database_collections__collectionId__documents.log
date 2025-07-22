@@ -1,0 +1,42 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections/{collectionId}/documents
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/database/collections/67d29069109bf/documents
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67b14f7d87128', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': {'LLM13': 13}, 'parentDocument': 'LLMTestString34', 'parentProperty': 'parentDocumentId', 'parentPropertyType': 'assign', 'read': ['LLMTestString33'], 'write': ['LLMTestString13']}
+response: {"message":"No parent document found","code":404,"version":"0.9.3"}
+status_code: 404
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections/{collectionId}/documents
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/database/collections/67d295d05d39c/documents
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67d2953849cc2', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': {'LLM34': 4.74}, 'parentDocument': 'LLMTestString16', 'parentProperty': 'parentDocumentId', 'parentPropertyType': 'assign', 'read': ['LLMTestString13'], 'write': ['LLMTestString32']}
+response: {"message":"No parent document found","code":404,"version":"0.9.3"}
+status_code: 404
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections/{collectionId}/documents
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/database/collections/67d29e67b0d13/documents
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67d2953849cc2', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': {'LLM15': 15}, 'parentDocument': 'LLMTestString5', 'parentProperty': 'parentDocumentId', 'parentPropertyType': 'assign', 'read': ['LLMTestString0'], 'write': ['LLMTestString22']}
+response: {"message":"No parent document found","code":404,"version":"0.9.3"}
+status_code: 404
+

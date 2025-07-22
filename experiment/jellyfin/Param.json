@@ -1,0 +1,12 @@
+{
+  "orderType": "ASC",
+  "runtime": "python-3.9",
+  "rules": [],
+  "parentPropertyType": "assign",
+  "execute": "",
+  "events": [],
+  "schedule": "",
+  "margin": 4,
+  "UserId": "a6148b7406ad4ed1967b9d0968e07ce3",
+  "userId":"a6148b7406ad4ed1967b9d0968e07ce3"
+}

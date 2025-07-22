@@ -1,0 +1,156 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/loginLLMcode_challenge'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+
+API Vul Type: xss
+Vul API Url: /api/login
+Vul API Method: Post
+API Vul Param: code_challenge
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/loginLLMcode_challenge'</script>
+

@@ -1,0 +1,28 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Get
+Candidate API Seq: Get /Genres  -->  Get /Genres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Genres
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Genres
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 18, 'limit': 32, 'searchTerm': 'LLMTestString38', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d25', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString16'], 'includeItemTypes': ['LLMTestString31'], 'isFavorite': True, 'imageTypeLimit': 11, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d28', 'nameStartsWithOrGreater': 'LLMTestString21', 'nameStartsWith': 'LLMTestString34', 'nameLessThan': 'LLMTestString9', 'enableImages': False, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Head
+Candidate API Seq: Get /Genres  -->  Head /Genres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Genres
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Genres
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 28, 'limit': 30, 'searchTerm': 'LLMTestString34', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d23', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString13'], 'includeItemTypes': ['LLMTestString43'], 'isFavorite': False, 'imageTypeLimit': 34, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d18', 'nameStartsWithOrGreater': 'LLMTestString35', 'nameStartsWith': 'LLMTestString1', 'nameLessThan': 'LLMTestString2', 'enableImages': True, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

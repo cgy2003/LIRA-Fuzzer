@@ -1,0 +1,53 @@
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /Collections
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/CollectionsLLMname'>

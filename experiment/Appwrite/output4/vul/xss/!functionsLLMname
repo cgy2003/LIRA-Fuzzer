@@ -1,0 +1,117 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/functionsLLMname'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+
+API Vul Type: xss
+Vul API Url: /functions
+Vul API Method: Post
+API Vul Param: name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/functionsLLMname'</script>
+

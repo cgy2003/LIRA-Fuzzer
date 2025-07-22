@@ -1,0 +1,28 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Studios/{name}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /Studios  -->  Get /Studios/{name}  -->  Get /Studios/{name}/Images/{imageType}
+Failed API: Get /Studios
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Studios
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 26, 'limit': 20, 'searchTerm': 'LLMTestString13', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d19', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString2'], 'includeItemTypes': ['LLMTestString1'], 'isFavorite': True, 'enableUserData': False, 'imageTypeLimit': 34, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d30', 'nameStartsWithOrGreater': 'LLMTestString1', 'nameStartsWith': 'LLMTestString25', 'nameLessThan': 'LLMTestString22', 'enableImages': False, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Studios/{name}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /Studios  -->  Get /Studios/{name}  -->  Head /Studios/{name}/Images/{imageType}
+Failed API: Get /Studios
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Studios
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 33, 'limit': 40, 'searchTerm': 'LLMTestString36', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d17', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString26'], 'includeItemTypes': ['LLMTestString25'], 'isFavorite': True, 'enableUserData': False, 'imageTypeLimit': 24, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d22', 'nameStartsWithOrGreater': 'LLMTestString28', 'nameStartsWith': 'LLMTestString8', 'nameLessThan': 'LLMTestString14', 'enableImages': False, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

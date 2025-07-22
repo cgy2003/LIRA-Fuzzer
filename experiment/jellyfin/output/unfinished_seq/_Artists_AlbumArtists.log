@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Artists/AlbumArtists
+Candidate API Method: Get
+Candidate API Seq: Get /Artists  -->  Get /Artists/AlbumArtists
+Failed API: Get /Artists
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Artists
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'minCommunityRating': 4.41, 'startIndex': 11, 'limit': 19, 'searchTerm': 'LLMTestString3', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d45', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString16'], 'includeItemTypes': ['LLMTestString24'], 'filters': ['IsFolder'], 'isFavorite': False, 'mediaTypes': ['LLMTestString34'], 'genres': ['LLMTestString41'], 'genreIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d28'], 'officialRatings': ['LLMTestString22'], 'tags': ['LLMTestString30'], 'years': [0], 'enableUserData': True, 'imageTypeLimit': 1, 'enableImageTypes': ['Primary'], 'person': 'LLMTestString13', 'personIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d18'], 'personTypes': ['LLMTestString12'], 'studios': ['LLMTestString24'], 'studioIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d46'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d17', 'nameStartsWithOrGreater': 'LLMTestString22', 'nameStartsWith': 'LLMTestString35', 'nameLessThan': 'LLMTestString1', 'enableImages': True, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

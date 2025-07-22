@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /LiveTv/TunerHosts
+Candidate API Method: Delete
+Candidate API Seq: Post /LiveTv/TunerHosts  -->  Delete /LiveTv/TunerHosts
+Failed API: Post /LiveTv/TunerHosts
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:8096/LiveTv/TunerHosts
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {}
+request_data: {'AllowHWTranscoding': True, 'DeviceId': 'LLMTestString21', 'EnableStreamLooping': False, 'FriendlyName': 'LLMTestString34', 'Id': 'LLMTestString43', 'ImportFavoritesOnly': True, 'Source': 'LLMTestString34', 'TunerCount': 2, 'Type': 'LLMTestString9', 'Url': 'LLMTestString37', 'UserAgent': 'LLMTestString31'}
+response: Error processing request.
+status_code: 404
+

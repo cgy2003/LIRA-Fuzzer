@@ -1,0 +1,28 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Artists/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Get
+Candidate API Seq: Get /Artists  -->  Get /Artists/{name}  -->  Get /Artists/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Artists
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Artists
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'minCommunityRating': 4.42, 'startIndex': 42, 'limit': 26, 'searchTerm': 'LLMTestString11', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d47', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString43'], 'includeItemTypes': ['LLMTestString25'], 'filters': ['IsFolder'], 'isFavorite': False, 'mediaTypes': ['LLMTestString35'], 'genres': ['LLMTestString11'], 'genreIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d24'], 'officialRatings': ['LLMTestString9'], 'tags': ['LLMTestString22'], 'years': [27], 'enableUserData': True, 'imageTypeLimit': 14, 'enableImageTypes': ['Primary'], 'person': 'LLMTestString35', 'personIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d50'], 'personTypes': ['LLMTestString6'], 'studios': ['LLMTestString4'], 'studioIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d13'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d18', 'nameStartsWithOrGreater': 'LLMTestString1', 'nameStartsWith': 'LLMTestString32', 'nameLessThan': 'LLMTestString15', 'enableImages': True, 'enableTotalRecordCount': True}
+request_data: {}
+response: Error processing request.
+status_code: 500
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Artists/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Head
+Candidate API Seq: Get /Artists  -->  Get /Artists/{name}  -->  Head /Artists/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Artists
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Artists
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'minCommunityRating': 4.76, 'startIndex': 13, 'limit': 21, 'searchTerm': 'LLMTestString21', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d17', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString8'], 'includeItemTypes': ['LLMTestString15'], 'filters': ['IsFolder'], 'isFavorite': False, 'mediaTypes': ['LLMTestString15'], 'genres': ['LLMTestString29'], 'genreIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d50'], 'officialRatings': ['LLMTestString29'], 'tags': ['LLMTestString6'], 'years': [34], 'enableUserData': True, 'imageTypeLimit': 19, 'enableImageTypes': ['Primary'], 'person': 'LLMTestString38', 'personIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d18'], 'personTypes': ['LLMTestString36'], 'studios': ['LLMTestString11'], 'studioIds': ['566048da-ed19-4cd3-8e0a-b7e0e1ec4d11'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d36', 'nameStartsWithOrGreater': 'LLMTestString10', 'nameStartsWith': 'LLMTestString28', 'nameLessThan': 'LLMTestString41', 'enableImages': True, 'enableTotalRecordCount': True}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

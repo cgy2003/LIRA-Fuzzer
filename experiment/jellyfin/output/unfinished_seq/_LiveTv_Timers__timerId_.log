@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /LiveTv/Timers/{timerId}
+Candidate API Method: Post
+Candidate API Seq: Get /LiveTv/Timers  -->  Post /LiveTv/Timers/{timerId}
+Failed API: Get /LiveTv/Timers
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/LiveTv/Timers
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'channelId': 'LLMTestString14', 'seriesTimerId': 'LLMTestString0', 'isActive': True, 'isScheduled': True}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

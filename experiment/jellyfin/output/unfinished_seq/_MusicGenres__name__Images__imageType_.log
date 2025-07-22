@@ -1,0 +1,28 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /MusicGenres  -->  Get /MusicGenres/{name}/Images/{imageType}
+Failed API: Get /MusicGenres
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/MusicGenres
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 3, 'limit': 28, 'searchTerm': 'LLMTestString16', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d36', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString4'], 'includeItemTypes': ['LLMTestString23'], 'isFavorite': True, 'imageTypeLimit': 23, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d31', 'nameStartsWithOrGreater': 'LLMTestString0', 'nameStartsWith': 'LLMTestString6', 'nameLessThan': 'LLMTestString36', 'enableImages': True, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /MusicGenres  -->  Head /MusicGenres/{name}/Images/{imageType}
+Failed API: Get /MusicGenres
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/MusicGenres
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 14, 'limit': 3, 'searchTerm': 'LLMTestString7', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d32', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString41'], 'includeItemTypes': ['LLMTestString33'], 'isFavorite': True, 'imageTypeLimit': 28, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d38', 'nameStartsWithOrGreater': 'LLMTestString12', 'nameStartsWith': 'LLMTestString3', 'nameLessThan': 'LLMTestString5', 'enableImages': True, 'enableTotalRecordCount': False}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

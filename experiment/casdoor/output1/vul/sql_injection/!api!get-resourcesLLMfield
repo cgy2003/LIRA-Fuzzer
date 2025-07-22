@@ -1,0 +1,7 @@
+-------- VoAPI Vul API --------
+API Vul Type: sql_injection
+Vul API Url: /api/get-resources
+Vul API Method: Get
+API Vul Param: field
+API Test Payload: SQLMap heuristic (basic) test
+

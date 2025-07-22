@@ -1,0 +1,42 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/executions
+Candidate API Method: Get
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Post /functions/{functionId}/executions  -->  Get /functions/{functionId}/executions
+Failed API: Post /functions/{functionId}/executions
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/functions/67d290a043418/executions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67b14f7d87128', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': 'LLMTestString32'}
+response: {"message":"Tag not found. Deploy tag before trying to execute a function","code":404,"version":"0.9.3"}
+status_code: 404
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/executions
+Candidate API Method: Get
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Post /functions/{functionId}/executions  -->  Get /functions/{functionId}/executions
+Failed API: Post /functions/{functionId}/executions
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/functions/67d296153b1b2/executions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67d2953849cc2', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': 'LLMTestString41'}
+response: {"message":"Tag not found. Deploy tag before trying to execute a function","code":404,"version":"0.9.3"}
+status_code: 404
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/executions
+Candidate API Method: Get
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Post /functions/{functionId}/executions  -->  Get /functions/{functionId}/executions
+Failed API: Post /functions/{functionId}/executions
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:4080/v1/functions/67d29ed9b2b62/executions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '67d2953849cc2', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.2089534849.1736760869; _gid=GA1.1.1443072443.1739680074; _ga_EXFX9C09LD=GS1.1.1736760869.1.1.1736760938.0.0.0; a_session_console_legacy=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; a_session_console=eyJpZCI6IjY3ODRkZTZkYWYxMjciLCJzZWNyZXQiOiIxMDUzNjVhMTNkNDNmMWExNmE0MzU1Y2FiNTQwZTM1M2MwYjU3ZTdkZjdhYmU3NzE2NTBiYjdjZGM1YzYyOTg0ZWM2NjMyYjA3ZGE1MGNmODhiMTI0ZTIyYWQ4ZTJjY2RhOTY2Yjk4MDI1Mjc0ZTI4MDA4ZWNmNDc3NTNiMjNiYTM1MjdmZWI2NzdkZGVkNjY5ODIwMjdhNGEzY2I1NDRmZTNlYTA2ZWYzMDU5NTAzYzZiMmU2YjE3M2NkZGE2OTA1OGExZjM3ZmViYjA3Yzk2ZmIxODM1OWFlZDNkMzhkMTE0YjY3MmMwYmUzZjBmMGFmMDEzYTVjYmFhZThjODY3In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'data': 'LLMTestString17'}
+response: {"message":"Tag not found. Deploy tag before trying to execute a function","code":404,"version":"0.9.3"}
+status_code: 404
+

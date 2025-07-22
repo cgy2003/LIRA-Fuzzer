@@ -1,0 +1,14 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /LiveTv/ListingProviders/Lineups
+Candidate API Method: Get
+Candidate API Seq: Post /LiveTv/ListingProviders  -->  Get /LiveTv/ListingProviders/Lineups
+Failed API: Post /LiveTv/ListingProviders
+Failed API Information: 
+----------------Send: -----------------------
+send request: post http://127.0.0.1:8096/LiveTv/ListingProviders
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'pw': 'LLMTestString11', 'validateListings': '2006-11-04', 'validateLogin': '2018-05-28'}
+request_data: {'ChannelMappings': [{'Name': 'LLMTestString4', 'Value': 'LLMTestString30'}], 'Country': 'LLMTestString16', 'EnableAllTuners': True, 'EnabledTuners': ['LLMTestString11'], 'Id': 'LLMTestString40', 'KidsCategories': ['LLMTestString2'], 'ListingsId': 'LLMTestString7', 'MovieCategories': ['LLMTestString0'], 'MoviePrefix': 'LLMTestString24', 'NewsCategories': ['LLMTestString34'], 'Password': 'LLMTestString22', 'Path': 'LLMTestString10', 'PreferredLanguage': 'LLMTestString3', 'SportsCategories': ['LLMTestString11'], 'Type': 'LLMTestString36', 'UserAgent': 'LLMTestString21', 'Username': 'LLMTestString40', 'ZipCode': 'LLMTestString23'}
+response: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-d76f8b4af7c43242ad549ef02365da56-b56048b8d5fc2946-00","errors":{"validateLogin":["The value \u00272018-05-28\u0027 is not valid."],"validateListings":["The value \u00272006-11-04\u0027 is not valid."]}}
+status_code: 400
+

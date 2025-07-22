@@ -1,0 +1,28 @@
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Studios/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Get
+Candidate API Seq: Get /Studios  -->  Get /Studios/{name}  -->  Get /Studios/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Studios
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Studios
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 37, 'limit': 40, 'searchTerm': 'LLMTestString30', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d12', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString1'], 'includeItemTypes': ['LLMTestString8'], 'isFavorite': False, 'enableUserData': False, 'imageTypeLimit': 22, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d49', 'nameStartsWithOrGreater': 'LLMTestString10', 'nameStartsWith': 'LLMTestString29', 'nameLessThan': 'LLMTestString34', 'enableImages': False, 'enableTotalRecordCount': True}
+request_data: {}
+response: Error processing request.
+status_code: 500
+
+-------- LLM Unfinished Sequence --------
+Candidate API Url: /Studios/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Head
+Candidate API Seq: Get /Studios  -->  Get /Studios/{name}  -->  Head /Studios/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /Studios
+Failed API Information: 
+----------------Send: -----------------------
+send request: get http://127.0.0.1:8096/Studios
+api_header_dict: {'Content-Type': 'application/json', 'X-Emby-Token': '0ced559ebcfe4ddb87cedd1007b9e38e'}
+api_query_dict: {'startIndex': 17, 'limit': 29, 'searchTerm': 'LLMTestString3', 'parentId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d20', 'fields': ['AirTime'], 'excludeItemTypes': ['LLMTestString38'], 'includeItemTypes': ['LLMTestString35'], 'isFavorite': False, 'enableUserData': True, 'imageTypeLimit': 26, 'enableImageTypes': ['Primary'], 'userId': '566048da-ed19-4cd3-8e0a-b7e0e1ec4d23', 'nameStartsWithOrGreater': 'LLMTestString42', 'nameStartsWith': 'LLMTestString3', 'nameLessThan': 'LLMTestString7', 'enableImages': False, 'enableTotalRecordCount': True}
+request_data: {}
+response: Error processing request.
+status_code: 500
+

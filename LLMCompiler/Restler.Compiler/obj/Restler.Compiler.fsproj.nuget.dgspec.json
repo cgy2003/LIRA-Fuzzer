@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\LLM2-main\\LLM2-main\\LLMCompiler\\Restler.Compiler\\Restler.Compiler.fsproj": {}
+  },
+  "projects": {
+    "E:\\LLM2-main\\LLM2-main\\LLMCompiler\\Restler.Compiler\\Restler.Compiler.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LLM2-main\\LLM2-main\\LLMCompiler\\Restler.Compiler\\Restler.Compiler.fsproj",
+        "projectName": "Restler.Compiler",
+        "projectPath": "E:\\LLM2-main\\LLM2-main\\LLMCompiler\\Restler.Compiler\\Restler.Compiler.fsproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\LLM2-main\\LLM2-main\\LLMCompiler\\Restler.Compiler\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": ["net6.0"],
+        "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\6.0.428\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": ["NU1603"]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.14.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.FSharpLu": {
+              "target": "Package",
+              "version": "[0.11.7, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.FSharpLu.Json": {
+              "target": "Package",
+              "version": "[0.11.7, )",
+              "generatePathProperty": true
+            },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[10.7.2, )",
+              "generatePathProperty": true
+            },
+            "NSwag.Core": {
+              "target": "Package",
+              "version": "[13.16.1, )",
+              "generatePathProperty": true
+            },
+            "NSwag.Core.Yaml": {
+              "target": "Package",
+              "version": "[13.16.1, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )",
+              "generatePathProperty": true
+            },
+            "Pluralize.NET.Core": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
